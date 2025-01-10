@@ -2,12 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-12">
-      <div className="container mx-auto">
-        <p className="text-white text-center">
-          Copyright &copy;Isa Iant Maulana. All rights reserved.
+    <footer className="footer footer-center bg-primary text-white p-4  mx-auto text-center">
+      <aside>
+        <p>
+          Copyright © {new Date().getFullYear()} - All right reserved by ACME
+          Industries Ltd
         </p>
-      </div>
+      </aside>
     </footer>
   );
 };

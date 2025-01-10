@@ -6,9 +6,9 @@ const Product = ({ product }) => {
 
   return (
     <>
-      <div className="w-full">
+      <div className="w-32 md:w-44 lg:w-56 max-w-screen-xl ">
         <Link to={`/product/${id}`}>
-          <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
+          <div className="border border-[#e4e4e4]  mb-4 relative overflow-hidden group transition">
             <div className="w-full h-full flex justify-center items-center">
               {/* image */}
               <div className="w-[200px] mx-auto flex justify-center items-center">
@@ -22,8 +22,8 @@ const Product = ({ product }) => {
           </div>
         </Link>
         {/* category, title & price */}
-        <div className="text-sm capitalize text-gray-500 mb-1">{category}</div>
-        <h2 className="font-semibold mb-1">{title}</h2>
+        <div className="text-xs capitalize text-gray-500 mb-1">{category}</div>
+        <h2 className="text-sm mb-1">{title}</h2>
         <h2 className="font-semibold">Rp{price}</h2>
       </div>
     </>
