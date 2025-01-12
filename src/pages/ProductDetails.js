@@ -46,12 +46,12 @@ const ProductDetails = () => {
               />
             </div>
             <div className="mt-3 text-base md:text-2xl ">4 Variasi Tersedia</div>
-            <div className="flex mt-4 gap-2 md:gap-4 md:h-36">
+            <div className="flex mt-4 gap-2 md:gap-4 md:h-36 lg:w-24 lg:h-24">
               {[image, image2, image3, image4].map((img, index) => (
                 <img
                   key={index}
                   src={img}
-                  className="w-20 md:w-36 rounded-lg shadow-md cursor-pointer"
+                  className="w-20 md:w-36 rounded-lg shadow-md  cursor-pointer"
                   alt={`Additional view ${index + 1}`}
                   onClick={() => handleImageClick(img)}
                 />

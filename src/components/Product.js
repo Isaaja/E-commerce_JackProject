@@ -6,7 +6,7 @@ const Product = ({ product }) => {
 
   return (
     <>
-      <div className="w-32 md:w-44 lg:w-56 max-w-screen-xl ">
+      <div className="w-32 md:w-48 lg:w-56 max-w-screen-xl ">
         <Link to={`/product/${id}`}>
           <div className="border border-[#e4e4e4]  mb-4 relative overflow-hidden group transition">
             <div className="w-full h-full flex justify-center items-center">
