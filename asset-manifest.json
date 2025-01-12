@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/E-commerce_JackProject/static/css/main.0ecf5fb4.css",
-    "main.js": "/E-commerce_JackProject/static/js/main.22fe4494.js",
+    "main.js": "/E-commerce_JackProject/static/js/main.17f8fbcb.js",
     "static/media/bghero.jpg": "/E-commerce_JackProject/static/media/bghero.afa451dd55a048aafefb.jpg",
     "static/media/logo.svg": "/E-commerce_JackProject/static/media/logo.7740ae04391d2ede26528c55d3b0102f.svg",
     "index.html": "/E-commerce_JackProject/index.html",
     "main.0ecf5fb4.css.map": "/E-commerce_JackProject/static/css/main.0ecf5fb4.css.map",
-    "main.22fe4494.js.map": "/E-commerce_JackProject/static/js/main.22fe4494.js.map"
+    "main.17f8fbcb.js.map": "/E-commerce_JackProject/static/js/main.17f8fbcb.js.map"
   },
   "entrypoints": [
     "static/css/main.0ecf5fb4.css",
-    "static/js/main.22fe4494.js"
+    "static/js/main.17f8fbcb.js"
   ]
 }
