@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer bg-neutral text-neutral-content items-center p-4 flex justify-between bg-secondary">
       <aside className="items-center gap-2 w-48 md:flex md:w-full">
         <img
-          src="/logo.png"
+          src="https://isaaja.github.io/E-commerce_JackProject/logo.png"
           alt=""
           className="w-14"
         />
