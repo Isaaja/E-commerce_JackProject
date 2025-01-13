@@ -1,7 +1,6 @@
 {
   "name": "ecommerce-shop",
   "version": "0.1.0",
-  "homepage": "https://Isaaja.github.io/E-commerce_JackProject",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

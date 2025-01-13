@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <section className=" py-6">
+      <section id="explore-products" className="py-6">
         <div className="container mx-auto">
           <h1 className="text-3xl font-semibold mb-10 text-center">
             Explore Our Products

@@ -24,12 +24,19 @@ const ProductDetails = () => {
     );
   }
 
-  const { title, price, image, image2, image3, image4, url } = product;
+  const { title, price, image, image2, image3, image4, url, category } =
+    product;
 
   // Function to handle the image click
   const handleImageClick = (img) => {
     setSelectedImage(img);
   };
+
+  // Determine the images to use based on the category
+  const images =
+    category === "Parfum Pria Unisex"
+      ? [image]
+      : [image, image2, image3, image4];
 
   return (
     <section className="py-8 lg:py-16 bg-gray-50">
@@ -37,7 +44,7 @@ const ProductDetails = () => {
         {/* Image and Text Wrapper */}
         <div className="flex flex-col mt-14 lg:flex-row gap-8 items-center">
           {/* Image Section */}
-          <div className="flex-1 w-full lg:max-w-md ">
+          <div className="flex-1 w-full lg:max-w-md">
             <div className="justify-items-center">
               <img
                 className="w-full rounded-lg shadow-lg"
@@ -45,13 +52,17 @@ const ProductDetails = () => {
                 alt={title}
               />
             </div>
-            <div className="mt-3 text-base md:text-2xl ">4 Variasi Tersedia</div>
+            <div className="mt-3 text-base md:text-2xl">
+              {images.length > 1
+                ? `${images.length} Variasi Tersedia`
+                : "1 Variasi Tersedia"}
+            </div>
             <div className="flex mt-4 gap-2 md:gap-4 md:h-36 lg:w-24 lg:h-24">
-              {[image, image2, image3, image4].map((img, index) => (
+              {images.map((img, index) => (
                 <img
                   key={index}
                   src={img}
-                  className="w-20 md:w-36 rounded-lg shadow-md  cursor-pointer"
+                  className="w-20 md:w-36 rounded-lg shadow-md cursor-pointer"
                   alt={`Additional view ${index + 1}`}
                   onClick={() => handleImageClick(img)}
                 />
@@ -68,38 +79,59 @@ const ProductDetails = () => {
               Rp{price}
             </div>
 
-            <div className="text-gray-700 mb-6">
-              <h2 className="font-semibold text-lg md:text-2xl mb-2">Bahan:</h2>
-              <ul className="list-disc pl-6 space-y-1 text-base md:text-xl">
-                <li>
-                  Cotton Combed 24s-Extra Soft Finishing (dijamin sejuk dan
-                  nyaman dipakai)
-                </li>
-                <li>Sejuk dan nyaman saat dipakai</li>
-                <li>Sablon DTF Premium (sablon lembut dan tahan lama)</li>
-              </ul>
+            {category === "Parfum Pria Unisex" ? (
+              <div className="text-gray-700 mb-6">
+                <h2 className="font-semibold text-lg md:text-2xl mb-2">
+                  JACK PROJECT PARFUME WATER KISS (30ML)
+                </h2>
+                <p className="text-base md:text-xl">
+                Cocok untuk : harian, sekolah, kuliah, ngantor, olahraga, outdoor, dan ngedate
+                </p>
+                <ul className="list-disc pl-6 space-y-1 text-base md:text-xl mt-4">
+                  <li> Wanginya soft, sangat enak dan tidak menyengat. Sangat mirip dengan originalnya.</li>
+                  <li>TAHAN LAMA, Dengan wangi yang soft, di kulit bisa tahan 6-12 jam lebih.</li>
+                  <li>Tidak mengandung zat-zat berbahaya.</li>
+                  <li>Tidak berbekas noda di baju.</li>
+                  <li>Tidak lengket, tidak panas di kulit, tidak gatal, tidak bikin kulit iritasi / memerah. 100% aman di kulit dan pakaian.</li>
+                  <li>Untuk kualitas, sudah pasti ini The Best nya.</li>
+                </ul>
+              </div>
+            ) : (
+              <div className="text-gray-700 mb-6">
+                <h2 className="font-semibold text-lg md:text-2xl mb-2">
+                  Bahan:
+                </h2>
+                <ul className="list-disc pl-6 space-y-1 text-base md:text-xl">
+                  <li>
+                    Cotton Combed 24s-Extra Soft Finishing (dijamin sejuk dan
+                    nyaman dipakai)
+                  </li>
+                  <li>Sejuk dan nyaman saat dipakai</li>
+                  <li>Sablon DTF Premium (sablon lembut dan tahan lama)</li>
+                </ul>
 
-              <h2 className="font-semibold text-lg mt-4 mb-2 md:text-2xl">
-                Detail Ukuran:
-              </h2>
-              <ul className="list-disc pl-6 space-y-1 text-base md:text-xl">
-                <li>M (Lebar 50 x Panjang 70 cm)</li>
-                <li>L (Lebar 53 x Panjang 73 cm)</li>
-                <li>XL (Lebar 56 x Panjang 75 cm)</li>
-                <li>XXL (Lebar 59 x Panjang 77 cm)</li>
-              </ul>
+                <h2 className="font-semibold text-lg mt-4 mb-2 md:text-2xl">
+                  Detail Ukuran:
+                </h2>
+                <ul className="list-disc pl-6 space-y-1 text-base md:text-xl">
+                  <li>M (Lebar 50 x Panjang 70 cm)</li>
+                  <li>L (Lebar 53 x Panjang 73 cm)</li>
+                  <li>XL (Lebar 56 x Panjang 75 cm)</li>
+                  <li>XXL (Lebar 59 x Panjang 77 cm)</li>
+                </ul>
 
-              <h2 className="font-semibold text-lg mt-4 mb-2 md:text-2xl">
-                Available 5 Colors:
-              </h2>
-              <ul className="list-disc pl-6 space-y-1 text-base md:text-xl">
-                <li>Navy</li>
-                <li>Super Maroon</li>
-                <li>Grey</li>
-                <li>White</li>
-                <li>Jet Black</li>
-              </ul>
-            </div>
+                <h2 className="font-semibold text-lg mt-4 mb-2 md:text-2xl">
+                  Available 5 Colors:
+                </h2>
+                <ul className="list-disc pl-6 space-y-1 text-base md:text-xl">
+                  <li>Navy</li>
+                  <li>Super Maroon</li>
+                  <li>Grey</li>
+                  <li>White</li>
+                  <li>Jet Black</li>
+                </ul>
+              </div>
+            )}
 
             <a href={url} className="block text-center lg:text-left">
               <button className="mt-6 py-3 px-8 md:w-44 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-700 transition duration-300">
