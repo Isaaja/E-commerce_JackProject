@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-shop",
   "version": "0.1.0",
-  "homepage": "https://isaaja.github.io/E-commerce_JackProject",
+  "homepage": "https://Isaaja.github.io/E-commerce_JackProject",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -45,5 +45,4 @@
     "react-router-dom": "^6.4.3",
     "tailwindcss": "^3.2.4"
   }
-
 }
