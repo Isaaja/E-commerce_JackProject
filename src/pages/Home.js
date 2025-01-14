@@ -40,7 +40,7 @@ const Home = () => {
           <h1 className="text-3xl font-semibold mb-10 text-center">
             Explore Our Products
           </h1>
-          <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16 max-w-sm mx-auto md:max-w-none md:mx-0">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center max-w-sm mx-auto md:max-w-none md:mx-0">
             {filteredProducts.map((product) => (
               <Product product={product} key={product.id} />
             ))}
