@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/E-commerce_JackProject/static/css/main.4844d0ac.css",
-    "main.js": "/E-commerce_JackProject/static/js/main.86fccd91.js",
+    "main.css": "/E-commerce_JackProject/static/css/main.4e8224aa.css",
+    "main.js": "/E-commerce_JackProject/static/js/main.a5d40860.js",
     "static/media/bghero.jpg": "/E-commerce_JackProject/static/media/bghero.afa451dd55a048aafefb.jpg",
     "static/media/logo.svg": "/E-commerce_JackProject/static/media/logo.7740ae04391d2ede26528c55d3b0102f.svg",
     "index.html": "/E-commerce_JackProject/index.html",
-    "main.4844d0ac.css.map": "/E-commerce_JackProject/static/css/main.4844d0ac.css.map",
-    "main.86fccd91.js.map": "/E-commerce_JackProject/static/js/main.86fccd91.js.map"
+    "main.4e8224aa.css.map": "/E-commerce_JackProject/static/css/main.4e8224aa.css.map",
+    "main.a5d40860.js.map": "/E-commerce_JackProject/static/js/main.a5d40860.js.map"
   },
   "entrypoints": [
-    "static/css/main.4844d0ac.css",
-    "static/js/main.86fccd91.js"
+    "static/css/main.4e8224aa.css",
+    "static/js/main.a5d40860.js"
   ]
 }
