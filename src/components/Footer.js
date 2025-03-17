@@ -10,7 +10,7 @@ const Footer = () => {
           className="w-14"
         />
         <p className="text-sm md:text-xl lg:text-2xl">
-          Copyright © {new Date().getFullYear()} - By Isa Iant Maulana
+          Copyright © {new Date().getFullYear()} Jack Project Official Store
         </p>
       </aside>
       <nav className="flex gap-4 h-16 justify-center items-center">
